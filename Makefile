@@ -1,5 +1,11 @@
-build:
-	go build -o bin/ebpfmap cmd/ebpfmap/main.go
+CLANG ?= clang
+CFLAGS := -O2 -g -Wall
 
-run:
-	sudo go run cmd/ebpfmap/main.go
+build: generate
+	cd cmd/ringbuffer && \
+	go build -o ../../bin/ringbuffer .
+
+generate: export BPF_CLANG := $(CLANG)
+generate: export BPF_CFLAGS := $(CFLAGS)
+generate:
+	go generate ./...

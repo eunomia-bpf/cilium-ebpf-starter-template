@@ -60,7 +60,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
           files: |
-            bin/ebpfmap
+            bin/ringbuffer
           prerelease: false
           tag_name: ${{ steps.set_version.outputs.result }}
           generate_release_notes: true
