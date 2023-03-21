@@ -1,4 +1,4 @@
-# **libbpf-rs-starter-template**
+# **cilium-ebpf-starter-template**
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 [![Build and publish](https://github.com/eunomia-bpf/cilium-ebpf-starter-template/actions/workflows/publish.yml/badge.svg)](https://github.com/eunomia-bpf/cilium-ebpf-starter-template/actions/workflows/publish.yml)
