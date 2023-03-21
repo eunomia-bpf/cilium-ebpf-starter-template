@@ -50,7 +50,7 @@ jobs:
     - name: install deps
       run: |
         sudo apt-get install -y --no-install-recommends \
-        wget golang curl pkg-config build-essential zlib1g-dev
+        wget git golang clang llvm curl pkg-config build-essential zlib1g-dev
 
     - name: build package
       run:  make build
