@@ -1,7 +1,7 @@
 # **libbpf-rs-starter-template**
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/eunomia-bpf/cilium-ebpf-starter-template/Build%20and%20Publish)
+[![Build and publish](https://github.com/eunomia-bpf/cilium-ebpf-starter-template/actions/workflows/publish.yml/badge.svg)](https://github.com/eunomia-bpf/cilium-ebpf-starter-template/actions/workflows/publish.yml)
 ![GitHub stars](https://img.shields.io/github/stars/eunomia-bpf/cilium-ebpf-starter-template?style=social)
 
 Welcome to the **`cilium-ebpf-starter-template`**! This project template is designed to help you quickly start
@@ -49,7 +49,6 @@ make install
 To build the project, run the following command:
 
 ```
-bashCopy code
 make build
 ```
 
