@@ -1,0 +1,12 @@
+cilium-ebpf-starter-template
+==========================
+
+This project is a template designed to get new developers with cilium-ebpf development.
+
+The project includes a dockerfile, Makefile,
+and publishes action, which can be used to develop projects using cilium-ebpf quickly.
+
+* How to use
+
+Fork the project or clone it locally and reset git.
+Do anything you want to do.
