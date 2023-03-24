@@ -10,6 +10,14 @@ Dockerfile, and GitHub action, along with all necessary dependencies to simplify
 
 Also, this is a minimal cilium ebpf project, you can read the code to understand how to write ebpf programs using cilium ebpf.
 
+借助于 GitHub 模板和 Github Codespace，可以轻松构建 eBPF 项目和开发环境，一键在线编译运行 eBPF 程序。关于中文的文档和详细的 eBPF 开发教程，可以参考：https://github.com/eunomia-bpf/bpf-developer-tutorial
+
+There are other templates for other languages:
+
+- [libbpf-starter-template](https://github.com/eunomia-bpf/libbpf-starter-template): eBPF project template based on the C language and the libbpf framework.
+- [libbpf-rs-starter-template](https://github.com/eunomia-bpf/libbpf-rs-starter-template): eBPF project template based on the Rust language and the libbpf-rs framework.
+- [eunomia-template>](https://github.com/eunomia-bpf/eunomia-template): eBPF project template based on the C language and the eunomia-bpf framework.
+
 ## **Getting Started**
 
 To get started, simply click the "Use this template" button on the GitHub repository page. This will create
