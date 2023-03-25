@@ -23,12 +23,54 @@ There are other templates for other languages:
 To get started, simply click the "Use this template" button on the GitHub repository page. This will create
 a new repository in your account with the same files and structure as this template.
 
+### Use docker
+
+Run the following code to run the eBPF code from the cloud to your local machine in one line:
+
+```console
+$ sudo docker run --rm -it --privileged ghcr.io/eunomia-bpf/cilium-template:latest
+2023/03/25 08:10:17 Waiting for events..
+2023/03/25 08:10:18 pid: 7564   comm: .waybar-wrapped
+2023/03/25 08:10:18 pid: 7564   comm: sh
+2023/03/25 08:10:20 pid: 7574   comm: grimshot
+2023/03/25 08:10:20 pid: 7576   comm: .grimshot-wrapp
+2023/03/25 08:10:20 pid: 7577   comm: .grimshot-wrapp
+2023/03/25 08:10:21 pid: 7580   comm: Xwayland
+```
+
+### Use Nix
+
+Using [direnv](https://github.com/direnv/direnv) and nix, you can quickly access a dev shell with a complete development environment.
+
+With direnv, you can automatically load the required dependencies when you enter the directory.
+This way you don't have to worry about installing dependencies to break your other project development environment.
+
+See how to install direnv and Nix:
+- direnv: https://github.com/direnv/direnv/blob/master/docs/installation.md
+- Nix: run
+```
+sh <(curl -L https://nixos.org/nix/install) --daemon
+```
+
+Then use the following command to enable direnv support in this directory.
+
+```sh
+direnv allow
+```
+
+If you want use nix flake without direnv, simply run:
+
+```sh
+nix develop
+```
+
 ## **Features**
 
 This starter template includes the following features:
 
 - A **`Makefile`** that allows you to build the project in one command
 - A **`Dockerfile`** to create a containerized environment for your project
+- A **`flake.nix`** to enter a develop shell
 - A GitHub action to automate your build and publish process
 - All necessary dependencies for Go development with ebpf
 
